@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>De Rua à Lenda do Futebol ⚽</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>De Rua à Lenda do Futebol ⚽</h1>
+        <div class="stats">
+            <p>Habilidade: <span id="skill">0.0</span></p>
+            <p>Dinheiro: $<span id="money">0.00</span></p>
+        </div>
+        
+        <button id="click-btn">Treinar Chute!</button>
+        
+        <div class="upgrades">
+            <h2>Melhorias</h2>
+            <div class="upgrade" id="upgrade1">
+                <p>Bola Melhor (+0.2 por clique) - $10</p>
+                <button onclick="buyUpgrade(1)">Comprar</button>
+            </div>
+            <div class="upgrade" id="upgrade2">
+                <p>Treinador (+1 por segundo) - $100</p>
+                <button onclick="buyUpgrade(2)">Comprar</button>
+            </div>
+            <div class="upgrade" id="upgrade3">
+                <p>Agente (2x mais dinheiro) - $1000</p>
+                <button onclick="buyUpgrade(3)">Comprar</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
